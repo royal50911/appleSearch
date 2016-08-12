@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".com.example.denniskim.crisp.Profile"
+    android:background="@mipmap/ic_apple">
+                <!--            android:background="#ffcf9272"android:background="@drawable/apple_gradient" -->
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:id="@+id/imageView3"
+        android:background="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/buttonHolder"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="141dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apples In Season"
+            android:id="@+id/seasonButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1"
+            android:background="@drawable/roundbutton"
+            android:drawableLeft="@mipmap/ic_calender"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="80dp"
+            android:alpha=".8"
+            android:onClick="inSeasonSearch"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Apples"
+            android:id="@+id/searchButton"
+            android:layout_alignTop="@+id/searchButton"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="80dp"
+            android:background= "@drawable/roundbutton2"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@mipmap/ic_1447952832_67"
+            android:alpha=".8"
+            android:onClick="searchApples" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Basket"
+            android:id="@+id/basketButton"
+            android:layout_below="@+id/basketButton"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="80dp"
+            android:drawableLeft="@mipmap/ic_basket"
+            android:background="@drawable/roundbutton3"
+            android:textColor="@android:color/white"
+            android:alpha=".8"
+            android:paddingRight="30dp"
+            android:onClick="myFavorites"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@id/imageView3"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logoutButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/on_off"
+        android:onClick="logOutButton"/>
+
+
+</RelativeLayout>

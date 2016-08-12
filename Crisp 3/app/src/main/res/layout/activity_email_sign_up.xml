@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.denniskim.crisp.UI.Login_SignUp.SignUpActivity"
+    android:background="#ffab213c"
+                android:focusable="false">
+<LinearLayout
+    android:id="@+id/signUpLayout"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="#fff"
+    android:alpha=".9"
+    android:weightSum="1"
+    android:layout_below="@+id/imageView6"
+    android:layout_centerHorizontal="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpID"
+        android:hint="Username"
+        android:textColor="#000000"
+        android:layout_weight="12.63" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/signUpPassword"
+        android:hint="Password"
+        android:textColor="#060606" />
+
+    <EditText
+        android:id="@+id/emailSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#020202" />
+</LinearLayout>
+
+<Button
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/accountCreate"
+android:id="@+id/loginButton"
+android:textSize="18sp"
+android:background="#ffff3327"
+android:textColor="@android:color/white"
+android:layout_below="@+id/signUpLayout"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true"
+android:layout_marginTop="34dp"/>
+
+<ImageView
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:id="@+id/imageView6"
+android:adjustViewBounds="false"
+android:background="@drawable/crisp_logo_colorwhite"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="41dp"/>
+</RelativeLayout>

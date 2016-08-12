@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTitle">
+        <item name = "android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:text">@string/app_name</item>
+        <item name = "android:layout_alignParentTop">true</item>
+        <item name = "android:layout_centerHorizontal">true</item>
+        <item name = "android:layout_marginTop">32dp</item>
+        <item name = "android:textSize">60sp</item>
+        <item name = "android:textColor">@android:color/black</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+
+    <style name ="AppSubtitle" parent ="AppTitle">
+    <item name = "android:textSize">13sp</item>
+    <item name = "android:layout_below">@+id/title</item>
+    <item name = "android:text">@string/subtitle</item>
+    <item name = "android:layout_alignParentTop">false</item>
+    <item name = "android:layout_marginTop">0dp</item>
+    </style>
+
+</resources>
